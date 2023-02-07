@@ -68,7 +68,7 @@
   justify-content: center;
 }
 
-.textContainer {
+.headerContainer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -87,4 +87,30 @@
   font-size: 24px;
   font-weight: 400;
 
+}
+
+/* button {
+  outline: 0;
+  border: 0;
+  background: none;
+  margin: 25px;
+  padding: 10px 35px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+} */
+
+.pink {
+  position: relative;
+  border: 2px solid #f62459;
+  color: #f62459;
+}
+.pink.active,
+.pink:active,
+.pink:hover {
+  background: #f62459;
+  color: #fff;
 }

@@ -1,7 +1,7 @@
-import { useState } from 'react'
+import React, { useState } from 'react'
 import useMeasure from 'react-use-measure'
 import { useTrail, animated } from '@react-spring/web'
-
+import './app.module.css'
 import styles from './app.module.css'
 
 const initialPosition = {
@@ -15,7 +15,6 @@ const trans = (x: number, y: number) =>
 
 export default function App() {
   const [isClicked, setIsClicked] = useState(false)
-  const [springEnabled, setSpringEnabled] = useState(true)
   const [trail, api] = useTrail(3, i => ({
     xy: [initialPosition.x, initialPosition.y],
     config: i === 0 ? fast : slow,
@@ -26,14 +25,14 @@ export default function App() {
     if (isClicked) {
       api.start({ xy: [e.clientX - left, e.clientY - top] })
     }
-    if (!isClicked && springEnabled) {
+    if (!isClicked) {
       api.start({ xy: [initialPosition.x * 0.8, initialPosition.y] })
     }
   }
 
   return (
     <div className={styles.container}>
-      <div className={styles.textContainer}>
+      <div className={styles.headerContainer}>
         <h1 className={styles.title}>Im a blob</h1>
         <h3 className={styles.subTitle}>Drag me!</h3>
       </div>
