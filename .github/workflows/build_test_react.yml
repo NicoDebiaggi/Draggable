@@ -24,4 +24,4 @@ jobs:
         with:
           node-version: 16.x
           build-comand: 'build'
-          output-dir: 'public'
+          output-dir: 'build'
