@@ -2,7 +2,7 @@
   "name": "draggable-challenge",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/NicoDebiaggi/Draggable",
+  "homepage": "./",
   "dependencies": {
     "@react-spring/web": "^9.6.1",
     "@types/jest": "^27.5.2",
